@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./indexa.css">
+    <link rel="shortcut icon" href="./logo6.jpg" type="image/x-icon">
+    <script src="./indexa.js" defer></script>
+    <title>Profile</title>
+</head>
+<body >
+    <div class="container">
+
+    <div class="contain" style="background-color: aqua;">
+        <div class="head">
+            
+            <div class="user">
+                <img src="./favatar.png" id="imgp">
+                <span id="uname"></span>
+            </div>
+            <div class="searchp">
+                <img src="./search1.png" id="srch">
+                <input type="search" placeholder="search" id="search">
+            </div>
+
+        </div>
+        
+       
+        
+
+        <div class="bkp" id="bkp">
+            <h2 id="list">List of available books</h2>
+            
+            
+
+            <div class="bk">
+
+            </div>
+            
+            
+        </div>
+       
+
+    </div>
+    
+    <div class="footer">
+         <a href="./index.html" style="color: red; display: flex;">Home</a>
+        <p id="foot">made by Techachievers &copy 2024 </p>
+        
+    </div>
+</div>
+
+   <script defer>
+        window.onload = function() {
+            let user = JSON.parse(localStorage.getItem('user'));
+
+            for(let i=0; i < user.length; i++){
+
+  
+                let name = (user[i].firstName); 
+                     let uname = document.getElementById("uname");
+                     uname.innerText = `welcome ${name}`
+                        
+                }
+            }
+        
+   </script>
+</body>
+</html>

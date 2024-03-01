@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexa.css">
+    <link rel="shortcut icon" href="./logo6.jpg" type="image/x-icon">
+    <title>Admin</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="nav">
+                <div class="logo">
+                    <a href="./index.html"><img src="./logo6.jpg" id="logo3"></a>
+                     <p id="lib">Library</p>
+                 </div>
+           
+                
+                <div class="menu">
+                    <button class="logIn"><a href="./about.html" id="log">about us</a></button>
+                    <button class="signIN"><a href="./signUp.html" id="sig">sign up</a></button>
+                    <button class="logIn"><a href="./login.html" id="log">log in</a></button>
+                </div>
+        </div>
+        
+        <div id="info">
+               <h1 id="admin"> WELCOME TO SAIL LIBRARY ADMIN PAGE</h1>
+                
+               <div id="parag">
+                    <p id="para1">total number of signee's</p>
+                    <p id="para2">number of available books</p>
+                    <p id="para3">name of logged in members</p>
+                </div>
+        </div>
+
+        <div class="footer">
+            <p id="foot">made by Techachievers &copy 2024 </p>
+        </div>
+    
+    </div>
+
+    <script defer>
+
+        let para1 = document.getElementById("para1");
+        let para2 = document.getElementById("para2");
+        let para3 = document.getElementById("para3");
+
+        window.onload = function() {
+            let user = JSON.parse(localStorage.getItem('user'));
+            let regUser = user.length
+
+            let totBooks= (books.length);  
+
+           para1.innerText = ` total number of registered users: ${regUser}`
+           para2.innerText = ` total number of books in store: ${totBooks}`
+
+           //console.log(regUser);
+           
+             for(let i=0; i < user.length; i++){
+
+  
+                let name = (user[i].firstName); 
+                      let uname = document.getElementById("uname");
+                      para3.innerText = `logged in user: ${name}`
+                        
+                 }
+            }
+
+
+     const books = [
+
+     {
+         "title": "Harry Potter and the Philosopher's Stone",
+         "author": "J. K. Rowling",
+         "url": "https://openlibrary.org//works/OL82563W?edition=ia%3Aharrypottersorce0000rowl_t5a1",
+         "image": "https://covers.openlibrary.org/b/olid/OL32784488M-M.jpg"
+       },
+       {
+         "title": "Harry Potter and the Deathly Hallows",
+         "author": "J. K. Rowling",
+         "url": "https://openlibrary.org//works/OL82586W?edition=ia%3Aharrypotterdeath0000rowl_n2u6",
+         "image": "https://covers.openlibrary.org/b/olid/OL10506200M-M.jpg"
+       },
+       {
+         "title": "Harry Potter and the Goblet of Fire",
+         "author": "J. K. Rowling",
+         "url": "https://openlibrary.org//works/OL82577W?edition=ia%3Aharrypottergoble0000rowl_z6r7",
+         "image": "https://covers.openlibrary.org/b/olid/OL37058078M-M.jpg"
+       },
+       {
+         "title": "Harry Potter and the Chamber of Secrets",
+         "author": "J. K. Rowling",
+         "url": "https://openlibrary.org//works/OL82537W?edition=ia%3Aharrypotterchamb0000rowl_e1h5",
+         "image": "https://covers.openlibrary.org/b/olid/OL32784120M-M.jpg"
+       },
+       {
+         "title": "Harry Potter and the Half-Blood Prince",
+         "author": "J. K. Rowling",
+         "url": "https://openlibrary.org//works/OL82565W?edition=ia%3Aharrypottereoeni0000rowl",
+         "image": "https://covers.openlibrary.org/b/olid/OL9158073M-M.jpg"
+       },
+       {
+         "title": "Harry Potter and the Prisoner of Azkaban",
+         "author": "J. K. Rowling",
+         "url": "https://openlibrary.org//works/OL82536W?edition=ia%3Aharrypotterpriso0000rowl_g2m5",
+         "image": "https://covers.openlibrary.org/b/olid/OL24549468M-M.jpg"
+       },
+       {
+         "title": "Harry Potter and the Order of the Phoenix",
+         "author": "J. K. Rowling",
+         "url": "https://openlibrary.org//works/OL82548W?edition=ia%3Aharispoterisirfe0000rowl",
+         "image": "https://covers.openlibrary.org/b/olid/OL37786194M-M.jpg"
+       },
+   
+       {
+         "title": "Harry Potter",
+         "author": "Insight Editions",
+         "url": "https://openlibrary.org//works/OL25435677W",
+         "image": "https://covers.openlibrary.org/b/olid/OL34105008M-M.jpg"
+       },
+   
+       {
+         "title": "Harry Potter",
+         "author": "Insight Editions",
+         "url": "https://openlibrary.org//works/OL25420118W",
+         "image": "https://covers.openlibrary.org/b/olid/OL34079643M-M.jpg"
+       },
+       {
+         "title": "Harry Potter",
+         "author": "Insight Editions",
+         "url": "https://openlibrary.org//works/OL25476157W",
+         "image": "https://covers.openlibrary.org/b/olid/OL34166524M-M.jpg"
+       },
+   
+       {
+         "title": "Harry Potter",
+         "author": "MUTI",
+         "url": "https://openlibrary.org//works/OL25433235W",
+         "image": "https://covers.openlibrary.org/b/olid/OL34100160M-M.jpg"
+       },
+   
+       {
+         "title": "Harry Potter",
+         "author": "Insight Editions Staff",
+         "url": "https://openlibrary.org//works/OL25201820W",
+         "image": "https://covers.openlibrary.org/b/olid/OL33612025M-M.jpg"
+       }
+   
+   ];
+
+    </script>
+  
+
+    
+</body>
+</html>

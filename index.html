@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./indexa.css">
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="./logo6.jpg" type="image/x-icon">
+    <title>Library Management System</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <a href="./index.html"><img src="./logo6.jpg" id="logo3"></a>
+            <p id="lib">Library</p>
+           </div>
+        
+           
+           <div class="menu">
+              <button class="logIn"><a href="./about.html" id="log">about us</a></button>
+               <button class="signIN"><a href="./signUp.html" id="sig">sign up</a></button>
+               <button class="logIn"><a href="./login.html" id="log">log in</a></button>
+            </div>
+        </div>
+
+        <div class="container1">
+            <p id="greet">Welcome to SAIL Library</p>
+            <p class="info">We have various books that improves learning</p>
+            <p class="info">We have books ranging from science to tech to engineering</p>
+            <a href="./about.html"><button id="more"> Learn More</button></a>
+        </div>
+
+        <div class="book">
+            <h1 id="avail">Trending Books</h1>
+            <div class="books">
+                <card  class='card'><img src="./book1.png" class="img">  <a href="#" class="link"><button class="read">READ</button></a></card>
+                <card class="card"><img src="./book2.png" class="img"> <a href="#" class="link"><button class="read">READ</button></a></card>
+                <card class="card"><img src="./book3.png" class="img">  <a href="#" class="link"><button class="read">READ</button></a></card>
+                <card class="card"><img src="./book4.png" class="img">  <a href="#" class="link"><button class="read">READ</button></a></card>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p id="foot">made by Techachievers &copy 2024 </p>
+        </div>
+
+
+       
+
+    </div>
+
+    <script defer>
+        let link = document.getElementsByClassName("link");
+         for(let i =0; i <= link.length ; i++) {
+        link[i].addEventListener('click',()=>{
+        window.open("./signUp.html")
+     })
+  } 
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,439 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container, .contain{
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.contain{
+    background-color: aqua;
+}
+
+.container1{
+    
+    background: linear-gradient(rgba(19, 19, 19, 0.739), rgba(19, 19, 19, 0.62)), url(./images/lib2.jpg);
+    background-size: cover;
+    width:100%;
+    /* height:500px; */
+   
+    color:white;
+    padding-top:200px;
+    text-align: center;
+    font-size: 3rem;
+    font-family:sans-serif;
+
+    animation-name: fromTop;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+ @keyframes fromTop {
+    0%{transform: translateY(-100px);}
+ }
+:where(.signIN , .logIn){
+    background-color: red;
+    text-decoration: none;
+}
+:where(#sig ,#log){
+    text-decoration: none;
+    color: white;
+}
+
+#logo3{
+    width:80px;
+    border: 0px solid black;
+    
+}
+
+#lib{
+    margin-top: 25px;
+    border: 0px solid black;
+    font-size: 30px;
+    color:red;
+    display: flex;
+    justify-content: center;
+
+}
+.logo{
+    display:flex;
+}
+
+.menu{
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+}
+
+.men{
+    margin-right: 10px;
+    margin-top: 25px;
+}
+
+.nav{
+    width:100%;
+    height: 100PX;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 0px 0px 0px 0px;
+    padding: 10px;
+}
+
+#sea{
+    border:0px solid black;
+    margin-top: 25px;
+    width: 150px; 
+}
+
+.fa-magnifying-glass{
+  position: relative;
+  right: 45px;
+}
+
+#more{
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 800px;
+    margin-top: 30px;
+}
+
+#avail{
+    box-shadow: 5px 5px 5px 0px   rgba(24, 23, 23, 0.439);
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#ab{
+    padding: 10px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.sail{
+    color: red;
+}
+#abt{
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.img{
+    width:423px;
+    height: 590px;
+
+}
+
+#foot{
+    
+    color: white;
+    padding:20px;
+    text-align: center;
+}
+
+.footer{
+    position: relative;
+    bottom: 0px;
+    margin-top: 220px;
+    padding: 0px;
+    border: 4px solid red;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.books{
+    display: flex;
+    justify-content: center;
+
+    
+    animation-name: bookLEtf;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    
+}
+
+ @keyframes  bookLEtf {
+    0%{transform: translateX(-1000px);}
+ }
+   
+
+
+#avail{
+    padding: 20px;
+}
+
+#ser{
+    width:30px;
+    border:0px solid black;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+/* signup / Login */
+
+.formContainer{
+    background-color:white;
+    width: 250px;
+     margin: auto;
+     margin-top: 100px;  
+     text-align: center;
+    background:white;
+   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+   backdrop-filter: blur( 50px );
+   -webkit-backdrop-filter: blur( 4px ); 
+   border-radius: 10px;
+   border: 1px solid rgba( 255, 255, 255, 0.18 );
+   padding: 10px;
+}
+input{
+    padding: 10px;
+    margin: 10px;
+    width:200px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+button{
+    width: 150px;
+    padding: 10px;
+    font-size: medium;
+    text-transform: capitalize;
+    background-color: black;
+    color: white;
+    margin-left:27px ;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) all ease-in-out;
+    border: none;
+    outline-offset: none;
+    border-radius: 10px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+button:hover{
+   background-color: #4158D0;
+   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+   color: white;
+  
+}
+.loginTEXt{
+   text-align: center;
+   font-weight:bold;
+   font-size: 4rem;
+   text-transform: capitalize;
+   font-size: larger;
+   letter-spacing: 3px;
+}
+
+
+
+
+input[type='checkbox']{
+    padding: 0px;
+    margin: 0px;
+    width:20px;
+   
+    text-transform: capitalize;
+}
+
+.login{
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border: none;
+    width:250px;
+    padding: 10px;
+}
+
+#btt{
+    margin-top: 10px;
+}
+
+/* STYLING PROFILE PAGE */
+
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+
+#imgp{
+    width:80px;
+    
+}
+
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#bt1{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#srch{
+    width:20px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px solid black;
+    margin-left: -80px;
+
+    
+}
+
+#list{
+    padding: 20px;
+}
+
+#search{
+    width:100px;
+    border:0px solid black;
+    outline: none;
+    background-color: aqua;
+   
+    
+    
+}
+
+.searchp{
+    border:2px solid black;
+    padding:20px;
+    margin: 10px;
+    margin-right: 20px;
+    width: 250px;
+    height:40px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* STYLING THE BOOK AREA */
+
+.imgg {
+    width: 150px;
+    
+    box-shadow: 0px 2px 2px 1px white;
+}
+
+.title {
+    font-size: 1em;
+    font-weight: bolder;
+    color: black;
+}
+
+.author {
+    color: white;
+    font-size: 1em;
+    font-weight: bolder;
+    margin-block: 1em;
+}
+
+#auth {
+    color:chartreuse;
+}
+
+.bk {
+    /* width: 100%; */
+    /* min-height: 100vh; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* display: flex;
+    flex-wrap: wrap; */
+    justify-content: center;
+    place-items: center;
+    gap: 5px;
+    text-align: left;
+    padding: 15px;
+
+}
+
+#list{
+    text-align: center;
+}
+
+.books{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 20px;
+    width:100%;
+    
+    
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin-left: -100px;
+   
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#parag{
+    margin-top: 50px;
+}
+
+
+@media only screen and (max-width:440px){
+    .logo{
+        width: 50px;
+    }
+
+    .menu{
+        margin: 0;
+        width: 60%;
+    }
+    .logIn, .signIN{
+        font-size: 15px;
+        padding: 5px 10px;
+        margin: 5px;
+    }
+
+    #admin{
+        font-size: 24px
+    }
+    .footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+} 
